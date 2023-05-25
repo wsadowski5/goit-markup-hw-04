@@ -122,7 +122,7 @@ button{
 }
 
 .contact-footer{
-    padding: 60px 0px 60px 15px;
+    padding: 60px 0px; 
     font-style: normal;
 }
 
@@ -139,16 +139,13 @@ button{
     opacity: 0.6;
 }
 
-.background-dark{
+.footer-style{
     background-color: var(--background-dark);
+    color: var(--white-tekst);
 }
 
 .background-light{
     background-color: var(--background-light);
-}
-
-.white-text{
-    color: var(--white-tekst);
 }
 
 .portfolio-font{
