@@ -21,11 +21,14 @@ body {
     --grid-shadow-third: #00000029;
     --grid-border: #eee;
     --overlay:#2F303A66;
+    --icon-color: #AFB1B8;
+    --icon-color-footer: #ffffff1a;
 }
 
 .container {
     width: 1200px;
-    margin:0 auto;    
+    margin:0 auto;
+    padding: 0 15px 0 15px;    
 }
 
 h1, h2, h3, h4, h5, h6, p, ul {
@@ -42,7 +45,7 @@ h1{
     font-size: 44px;
     font-weight: 900;
     color:var(--white-tekst);
-    padding: 200px 252px 0 252px;
+    padding: 200px 237px 0 237px;
     text-align: center;
     line-height: 1.36;
     letter-spacing: 0.06em;
@@ -108,12 +111,11 @@ button{
     line-height: 1.875;
     width: 200px;
     padding: 10px 0;
-    margin: 30px 500px 200px 500px;
+    margin: 30px 475px 200px 475px;
     letter-spacing: 0.06em;
 }
 
-
-.background-icon-lorem{
+.icon-lorem{
     background-color: var(--background-light);
     border-radius: 4px;
     padding: 25px 100px;
@@ -162,7 +164,7 @@ header{
     font-size: 14px;
     display: flex;
     justify-content: space-between;
-    padding: 0 15px 0 15px;
+    margin: 24px 0;
     letter-spacing: 0.02em;
     }
 
@@ -204,7 +206,7 @@ header{
 .lorem-list{
     display: flex;
     padding-bottom: 94px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .lorem-list p{
@@ -226,35 +228,47 @@ header{
     gap:10px;
     justify-content: center;
     margin-top: 16px;
+    fill: var(--icon-color);
 }
 
-.instagram-icon{
-    fill: var(--brand-color-grey) ;
-}
-
-.icon-round{    
-    display: flex;
-    background-color:yellow;
+.icon-round{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-}
-.icon-round:hover{
-    cursor: pointer;
-    background-color: var(--brand-color-blue);
-    fill: blue;
 }
 
-.instagram-icon:hover{
-    fill:var(--white-tekst);
+.icon-round:hover, icon-round:focus{
+    cursor: pointer;
+    background-color: var(--brand-color-blue);
+    fill: var(--white-tekst)
+}
+
+.clients-icons{
+    display: flex;
+    justify-content: space-between ; 
+    fill: var(--icon-color);
+}
+
+
+
+div[class="clients-icons"]>svg{
+    padding: 17.71px 32px 14.25px;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+}
+
+div[class="clients-icons"]>svg:hover, div[class="clients-icons"]>svg:focus{
+    border: 1px solid var(--brand-color-blue);
+    fill: var(--brand-color-blue);
     cursor: pointer;
 }
 
 .img-display{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 ul[class="img-display"]>li{
@@ -279,7 +293,6 @@ ul[class="img-display"]>li{
     display:flex;
     flex-wrap: wrap;
     gap:30px;
-    padding: 0 15px;
 }
 
 .img-grid img{
@@ -309,4 +322,36 @@ ul[class="img-grid"]>li:hover{
     color:var(--brand-color-grey)
 }
 
+.footer-flex{
+    display: flex;
+}
 
+.social-footer{
+    margin: 72px 0 0 70px;
+    line-height: 1.1428em;
+    font-size: 14px;
+}
+
+.footer-icons{
+    display:flex;
+    column-gap: 10px;
+    margin: 20px 0 100px 70px;
+}
+
+.footer-icons>a{
+    fill: var(--white-tekst);
+    padding: 12px;
+}
+.footer-round{
+    display:flex;
+    background-color: var(--icon-color-footer);
+    border-radius: 50px;
+    fill: var(--white-tekst);
+    padding: 12px;
+}
+
+.footer-round:hover, .footer-round:focus{
+    background-color: var(--brand-color-blue);
+    cursor: pointer;
+    
+}
