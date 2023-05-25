@@ -90,7 +90,7 @@ button:focus, button:hover {
 }
 
 .background-main {
-    background-image:linear-gradient(var(--overlay),var(--overlay)),url('./images/background-main.jpg');
+    background-image:linear-gradient(var(--overlay),var(--overlay)),url('../images/background-main.jpg');
 }
 
 button{
